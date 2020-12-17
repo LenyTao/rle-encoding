@@ -15,7 +15,7 @@ object JdiHelperApp extends App {
 
   val vm = JdiHelper.connect(hostname = "127.0.0.1", port = 4000)
 
-//  vm.resume()
+  vm.resume()
 
   while (true) {
     Thread.sleep(1.seconds.toMillis)
