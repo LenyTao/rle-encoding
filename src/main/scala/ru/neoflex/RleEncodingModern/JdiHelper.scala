@@ -1,10 +1,11 @@
-import com.sun.jdi.connect.{AttachingConnector, Connector, LaunchingConnector}
+package ru.neoflex.RleEncodingModern
+
+import com.sun.jdi.connect.{AttachingConnector, Connector}
 import com.sun.jdi.{Bootstrap, ReferenceType, VirtualMachine}
 
 import java.time.Instant
 import scala.collection.mutable
 import scala.concurrent.duration._
-import scala.io.StdIn
 import scala.jdk.CollectionConverters._
 
 

@@ -1,14 +1,17 @@
+package ru.neoflex.RleEncodingModernTest
+
 
 
 import org.scalatest.flatspec._
 import org.scalatest.matchers._
+import ru.neoflex.RleEncodingModern.{CompressedBlock, RleEncoding, UncompressedBlock}
 
-import scala.collection.mutable.{ArrayBuffer, ListBuffer}
+import scala.collection.mutable.ListBuffer
 
 
 class RleEncodingSpec extends AnyFlatSpec with should.Matchers {
 
-  "RleEncoding" should "encode given string1" in {
+  "ru.neoflex.RleEncodingModern.RleEncoding" should "encode given string1" in {
     val rleEncoding = new RleEncoding
 
     rleEncoding.encode("ABCDE").toString() should be(ListBuffer(UncompressedBlock(5, List('A', 'B', 'C', 'D', 'E'))).toString())
